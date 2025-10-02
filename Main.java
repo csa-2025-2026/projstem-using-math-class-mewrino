@@ -13,11 +13,17 @@ public class Main
         printRandom3(N);
         */
 
-        // the slope between the points (0,0) and (1,1)
+        /* the slope between the points (0,0) and (1,1)
         double m = calcSlope(47, 3, 46, 67);
         System.out.println(m);
         System.out.println(calcSlope(0,0,1,1));
-    
+        */
+
+       double a = 43.5;
+       double b = 2495.53;
+       System.out.println(roundedDist(a, b));
+
+
     }
     
     public static void printRandom3(int num)
@@ -48,7 +54,9 @@ public class Main
     
     public static int roundedDist(double a, double b)
     {
-        // Do problem 3 here; replace code below
-        return 0;
+        double dist = Math.abs(b-a);
+        int rounded = (int) (dist + 0.5);
+        return rounded;
+
     }
 }
